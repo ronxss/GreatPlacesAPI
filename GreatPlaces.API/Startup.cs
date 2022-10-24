@@ -20,6 +20,7 @@ namespace GreatPlaces.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             var connection = Configuration["Data:ConnectionStrings:SqlConnectionString"];
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
@@ -42,6 +43,11 @@ namespace GreatPlaces.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(options => options
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyOrigin());
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
