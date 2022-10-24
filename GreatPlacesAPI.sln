@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{719B1B70-CB19-49C7-868C-C3DB60809CF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{413806B8-984A-420C-BB55-8E6577537F16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F8C75BAE-C9B7-46AF-B64F-6A81F69856D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{14751239-ABAF-481D-A20D-1B86968AD617}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.API", "GreatPlaces.API\GreatPlaces.API.csproj", "{31186AC6-A71B-498A-A5EB-129C4B6C9E11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{370FD89F-1D77-40BF-B123-BCD07C263837} = {370FD89F-1D77-40BF-B123-BCD07C263837}
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF} = {44FE5BD6-0307-4044-A7E7-A740C6EF38CF}
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157} = {97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}
+		{FE13CA84-ACA5-4011-918E-D681D3034027} = {FE13CA84-ACA5-4011-918E-D681D3034027}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.Application", "GreatPlaces.Application\GreatPlaces.Application.csproj", "{370FD89F-1D77-40BF-B123-BCD07C263837}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.Domain", "Domain\GreatPlaces.Domain.csproj", "{44FE5BD6-0307-4044-A7E7-A740C6EF38CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.Domain.Core", "Domain.Core\GreatPlaces.Domain.Core.csproj", "{FE13CA84-ACA5-4011-918E-D681D3034027}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.Domain.Services", "GreatPlaces.Domain.Services\GreatPlaces.Domain.Services.csproj", "{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreatPlaces.Infrastructure", "GreatPlaces.Infrastructure\GreatPlaces.Infrastructure.csproj", "{20C0F830-458B-457E-AEE7-920967172828}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31186AC6-A71B-498A-A5EB-129C4B6C9E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31186AC6-A71B-498A-A5EB-129C4B6C9E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31186AC6-A71B-498A-A5EB-129C4B6C9E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31186AC6-A71B-498A-A5EB-129C4B6C9E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370FD89F-1D77-40BF-B123-BCD07C263837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370FD89F-1D77-40BF-B123-BCD07C263837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370FD89F-1D77-40BF-B123-BCD07C263837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370FD89F-1D77-40BF-B123-BCD07C263837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE13CA84-ACA5-4011-918E-D681D3034027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE13CA84-ACA5-4011-918E-D681D3034027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE13CA84-ACA5-4011-918E-D681D3034027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE13CA84-ACA5-4011-918E-D681D3034027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C0F830-458B-457E-AEE7-920967172828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C0F830-458B-457E-AEE7-920967172828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C0F830-458B-457E-AEE7-920967172828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C0F830-458B-457E-AEE7-920967172828}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31186AC6-A71B-498A-A5EB-129C4B6C9E11} = {719B1B70-CB19-49C7-868C-C3DB60809CF9}
+		{370FD89F-1D77-40BF-B123-BCD07C263837} = {413806B8-984A-420C-BB55-8E6577537F16}
+		{44FE5BD6-0307-4044-A7E7-A740C6EF38CF} = {F8C75BAE-C9B7-46AF-B64F-6A81F69856D2}
+		{FE13CA84-ACA5-4011-918E-D681D3034027} = {F8C75BAE-C9B7-46AF-B64F-6A81F69856D2}
+		{97DFE6A5-DDBA-4ADC-82AF-B6C14939D157} = {F8C75BAE-C9B7-46AF-B64F-6A81F69856D2}
+		{20C0F830-458B-457E-AEE7-920967172828} = {14751239-ABAF-481D-A20D-1B86968AD617}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3308C5C8-638D-432C-99F2-234C5231782D}
+	EndGlobalSection
+EndGlobal

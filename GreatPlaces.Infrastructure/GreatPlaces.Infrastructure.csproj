@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Graph" Version="4.45.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Core\GreatPlaces.Domain.Core.csproj" />
+    <ProjectReference Include="..\Domain\GreatPlaces.Domain.csproj" />
+    <ProjectReference Include="..\GreatPlaces.Application\GreatPlaces.Application.csproj" />
+    <ProjectReference Include="..\GreatPlaces.Domain.Services\GreatPlaces.Domain.Services.csproj" />
+  </ItemGroup>
+
+</Project>
