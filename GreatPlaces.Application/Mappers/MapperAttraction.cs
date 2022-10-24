@@ -12,10 +12,10 @@ namespace GreatPlaces.Application.Interface.Mappers
 
                 Id = attractionsDto.Id,
                 Name = attractionsDto.Name,
-                Cidade = attractionsDto.Cidade,
-                Descricao = attractionsDto.Descricao,
-                Localizacao = attractionsDto.Localizacao,
-                Estado = attractionsDto.Estado
+                City = attractionsDto.City,
+                Description = attractionsDto.Description,
+                Localization = attractionsDto.Localization,
+                State = attractionsDto.State
             };
 
             return attraction;
@@ -27,10 +27,10 @@ namespace GreatPlaces.Application.Interface.Mappers
             {
                 Id = attractions.Id,
                 Name = attractions.Name,
-                Cidade = attractions.Cidade,
-                Descricao = attractions.Descricao,
-                Localizacao = attractions.Localizacao,
-                Estado = attractions.Estado
+                City = attractions.City,
+                Description = attractions.Description,
+                Localization = attractions.Localization,
+                State = attractions.State
             };
             return attractionsDto;
         }
@@ -41,10 +41,10 @@ namespace GreatPlaces.Application.Interface.Mappers
             {
                 Id = a.Id,
                 Name = a.Name,
-                Cidade = a.Cidade,
-                Descricao = a.Descricao,
-                Localizacao = a.Localizacao,
-                Estado = a.Estado
+                City = a.City,
+                Description = a.Description,
+                Localization = a.Localization,
+                State = a.State
             });
             return dto;
         }
