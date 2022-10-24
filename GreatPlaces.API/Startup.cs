@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using GreatPlaces.Infrastructure.CrossCutting.IOC;
 using GreatPlaces.Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -19,9 +20,10 @@ namespace GreatPlaces.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration["SqlConnection:SqlConnectionString"];
+            var connection = Configuration["Data:ConnectionStrings:SqlConnectionString"];
             services.AddDbContext<SqlContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Great Places API", Version = "v1" });

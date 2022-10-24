@@ -51,7 +51,16 @@ namespace GreatPlaces.Application.Interface.Mappers
 
         IEnumerable<AttractionsDto> IMapperAttractions.MapperListAttractionsDto(IEnumerable<Attractions> attractions)
         {
-            throw new NotImplementedException();
+            var dto = attractions.Select(a => new AttractionsDto
+            {
+                Id = a.Id,
+                Name = a.Name,
+                City = a.City,
+                Description = a.Description,
+                Localization = a.Localization,
+                State = a.State
+            });
+            return dto;
         }
     }
 }
