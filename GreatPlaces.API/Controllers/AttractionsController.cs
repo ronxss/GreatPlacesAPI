@@ -39,7 +39,7 @@ namespace GreatPlaces.API.Controllers
                     return NotFound();
 
                 _applicationServiceAttractions.Add(attractionsDTO);
-                return Ok("Cliente Cadastrado com sucesso!");
+                return Ok("Ponto turístico Cadastrado com sucesso!");
             }
             catch (Exception ex)
             {
@@ -60,7 +60,7 @@ namespace GreatPlaces.API.Controllers
                     return NotFound();
 
                 _applicationServiceAttractions.Update(attractionsDTO);
-                return Ok("Cliente Atualizado com sucesso!");
+                return Ok("Ponto turístico Atualizado com sucesso!");
             }
             catch (Exception)
             {
